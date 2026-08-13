@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Filter } from 'lucide-react';
 import BlogCard from '../components/BlogCard';
@@ -7,8 +7,9 @@ import '../styles/categories.css';
 
 export default function Categories() {
   const { category } = useParams();
+  const navigate = useNavigate();
   const selectedCategory = category || categories[0];
-  
+
   const filteredPosts = blogPosts.filter(post => post.category === selectedCategory);
 
   return (
@@ -45,11 +46,12 @@ export default function Categories() {
             {categories.map((cat, idx) => (
               <motion.button
                 key={cat}
+                type="button"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: idx * 0.05 }}
                 className={`category-btn ${selectedCategory === cat ? 'active' : ''}`}
-                onClick={() => window.location.href = `/categories/${cat}`}
+                onClick={() => navigate(`/categories/${cat}`)}
               >
                 <span className="category-dot"></span>
                 {cat}

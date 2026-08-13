@@ -6,7 +6,7 @@
 
 .categories-hero {
   position: relative;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  background: linear-gradient(135deg, rgba(31, 58, 95, 0.08), rgba(183, 122, 82, 0.12));
   padding: 4rem 1rem;
   text-align: center;
   overflow: hidden;
@@ -127,7 +127,7 @@
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   border-color: transparent;
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 30px rgba(31, 58, 95, 0.28);
 }
 
 .category-dot {

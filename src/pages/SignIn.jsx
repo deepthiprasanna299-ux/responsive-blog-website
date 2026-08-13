@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, Lock, Eye, EyeOff, ArrowRight } from 'lucide-react';
+import { Eye, EyeOff, ArrowRight } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
 import '../styles/auth.css';
@@ -97,10 +97,9 @@ export default function SignIn() {
               <div className="form-group">
                 <label>Email Address</label>
                 <div className="form-input-wrapper">
-                  <Mail size={18} className="input-icon" />
                   <input
                     type="email"
-                    placeholder="your@email.com"
+                    placeholder=""
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -110,10 +109,9 @@ export default function SignIn() {
               <div className="form-group">
                 <label>Password</label>
                 <div className="form-input-wrapper">
-                  <Lock size={18} className="input-icon" />
                   <input
                     type={showPassword ? 'text' : 'password'}
-                    placeholder="••••••••"
+                    placeholder=""
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />

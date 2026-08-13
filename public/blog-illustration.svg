@@ -1,0 +1,131 @@
+<svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5ede9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fffbf7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="laptopGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1000" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Plant decoration - left side -->
+  <ellipse cx="80" cy="150" rx="35" ry="45" fill="#7cb342" opacity="0.7"/>
+  <ellipse cx="55" cy="130" rx="20" ry="35" fill="#9ccc65" opacity="0.8"/>
+  <ellipse cx="105" cy="135" rx="22" ry="38" fill="#9ccc65" opacity="0.8"/>
+  
+  <!-- Books stack - left side -->
+  <rect x="120" y="480" width="140" height="35" fill="#1f3a5f" rx="3"/>
+  <text x="195" y="510" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">TECHNOLOGY</text>
+  
+  <rect x="125" y="520" width="140" height="35" fill="#6b4c9a" rx="3"/>
+  <text x="195" y="550" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">BUSINESS</text>
+  
+  <rect x="130" y="560" width="140" height="35" fill="#b77a52" rx="3"/>
+  <text x="195" y="590" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">LIFESTYLE</text>
+  
+  <rect x="135" y="600" width="140" height="35" fill="#2d8659" rx="3"/>
+  <text x="195" y="630" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">HEALTH</text>
+  
+  <!-- Coffee mug -->
+  <ellipse cx="100" cy="700" rx="45" ry="20" fill="#e8d4c4" stroke="#d4a574" stroke-width="2"/>
+  <rect x="70" y="700" width="60" height="60" fill="#e8d4c4" stroke="#d4a574" stroke-width="2" rx="5"/>
+  <ellipse cx="100" cy="760" rx="45" ry="15" fill="#d4a574"/>
+  
+  <!-- Mug handle -->
+  <path d="M 130 720 Q 160 740 150 780" stroke="#d4a574" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Mug text -->
+  <text x="100" y="725" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="middle" font-family="Arial">Write.</text>
+  <text x="100" y="745" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="middle" font-family="Arial">Share.</text>
+  <text x="100" y="765" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="middle" font-family="Arial">Inspire.</text>
+  
+  <!-- Pen holder -->
+  <rect x="740" y="680" width="80" height="100" fill="#f5e6d3" stroke="#d4a574" stroke-width="2" rx="8"/>
+  <ellipse cx="780" cy="680" rx="40" ry="15" fill="#e8d4c4" stroke="#d4a574" stroke-width="2"/>
+  
+  <!-- Pens in holder -->
+  <line x1="760" y1="680" x2="750" y2="650" stroke="#ff6b6b" stroke-width="6" stroke-linecap="round"/>
+  <line x1="780" y1="680" x2="785" y2="640" stroke="#4ecdc4" stroke-width="6" stroke-linecap="round"/>
+  <line x1="800" y1="680" x2="810" y2="645" stroke="#ffd93d" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Laptop - center -->
+  <rect x="420" y="250" width="500" height="350" fill="url(#laptopGradient)" rx="20" stroke="#1f2937" stroke-width="3"/>
+  
+  <!-- Laptop screen -->
+  <rect x="440" y="270" width="460" height="280" fill="white" rx="10"/>
+  
+  <!-- Laptop content -->
+  <text x="670" y="310" font-size="28" font-weight="bold" fill="#1f3a5f" text-anchor="middle" font-family="Arial">Blog</text>
+  <text x="670" y="335" font-size="14" fill="#666" text-anchor="middle" font-family="Arial">Home • Technology • Lifestyle • Business • Health</text>
+  
+  <!-- Featured image on laptop -->
+  <rect x="460" y="360" width="240" height="140" fill="#87ceeb" rx="8"/>
+  <rect x="460" y="360" width="240" height="140" fill="url(#laptopGradient)" opacity="0.3" rx="8"/>
+  
+  <!-- Mountain/sunset in featured image -->
+  <polygon points="500,480 560,420 620,480" fill="#ff9800" opacity="0.8"/>
+  <circle cx="560" cy="400" r="30" fill="#ffc107" opacity="0.9"/>
+  
+  <!-- Article title on laptop -->
+  <text x="730" y="380" font-size="16" font-weight="bold" fill="#1f2937" font-family="Arial">10 Habits for a</text>
+  <text x="730" y="405" font-size="16" font-weight="bold" fill="#1f2937" font-family="Arial">Productive Life</text>
+  <text x="730" y="430" font-size="12" fill="#666" font-family="Arial">Discover simple yet powerful habits</text>
+  <text x="730" y="450" font-size="12" fill="#666" font-family="Arial">that help you achieve your goals.</text>
+  
+  <!-- Laptop keyboard area -->
+  <rect x="420" y="620" width="500" height="80" fill="#1f2937" rx="0" stroke="#1f2937" stroke-width="3"/>
+  
+  <!-- Keyboard keys pattern -->
+  <g opacity="0.3">
+    <rect x="440" y="635" width="12" height="12" fill="#555" rx="1"/>
+    <rect x="460" y="635" width="12" height="12" fill="#555" rx="1"/>
+    <rect x="480" y="635" width="12" height="12" fill="#555" rx="1"/>
+    <rect x="500" y="635" width="12" height="12" fill="#555" rx="1"/>
+    <rect x="440" y="655" width="12" height="12" fill="#555" rx="1"/>
+    <rect x="460" y="655" width="12" height="12" fill="#555" rx="1"/>
+  </g>
+  
+  <!-- Trackpad -->
+  <rect x="500" y="675" width="80" height="50" fill="#333" rx="4" stroke="#555" stroke-width="1"/>
+  
+  <!-- Icon badges top right -->
+  <!-- Lightbulb icon -->
+  <circle cx="820" cy="180" r="45" fill="#c77dff" rx="10"/>
+  <circle cx="820" cy="165" r="12" fill="#fff8dc" stroke="#c77dff" stroke-width="2"/>
+  <path d="M 815 177 L 815 190 M 825 177 L 825 190" stroke="#fff8dc" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Pencil icon -->
+  <circle cx="930" cy="120" r="45" fill="#4a90e2" rx="10"/>
+  <path d="M 920 105 L 935 120 L 930 145 L 915 130 Z" fill="white" stroke="#4a90e2" stroke-width="2"/>
+  <path d="M 930 135 L 930 145" stroke="#4a90e2" stroke-width="2"/>
+  
+  <!-- Bookmark icon -->
+  <circle cx="920" cy="280" r="45" fill="#f05a5a" rx="10"/>
+  <rect x="905" y="255" width="30" height="50" fill="white" stroke="#f05a5a" stroke-width="2" rx="3"/>
+  <path d="M 920 260 L 915 275 L 920 285 L 925 275 Z" fill="#f05a5a"/>
+  
+  <!-- Chart icon -->
+  <circle cx="810" cy="330" r="45" fill="#ffc107" rx="10"/>
+  <rect x="800" y="315" width="5" height="25" fill="white"/>
+  <rect x="810" y="305" width="5" height="35" fill="white"/>
+  <rect x="820" y="310" width="5" height="30" fill="white"/>
+  
+  <!-- Book icon -->
+  <circle cx="900" cy="420" r="45" fill="#52c77a" rx="10"/>
+  <path d="M 885 400 L 885 440 Q 900 450 915 440 L 915 400 Q 900 410 885 400" fill="white" stroke="#52c77a" stroke-width="2"/>
+  <line x1="900" y1="400" x2="900" y2="440" stroke="#52c77a" stroke-width="2"/>
+  
+  <!-- Blog title top left -->
+  <text x="280" y="100" font-size="72" font-weight="bold" fill="#1f3a5f" font-family="Georgia">Blog</text>
+  <text x="280" y="160" font-size="32" font-weight="300" fill="#1f2937" font-family="Arial">Insights, Tips &</text>
+  <text x="280" y="200" font-size="32" font-weight="300" fill="#1f2937" font-family="Arial">Ideas for a Smarter</text>
+  <text x="280" y="240" font-size="32" font-weight="300" fill="#1f2937" font-family="Arial">Tomorrow</text>
+  
+  <!-- Accent line -->
+  <rect x="280" y="260" width="120" height="6" fill="#ffc107" rx="3"/>
+</svg>

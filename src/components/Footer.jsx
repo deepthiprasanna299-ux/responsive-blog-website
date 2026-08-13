@@ -65,7 +65,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="footer-section"
+            className="footer-section follow-section"
           >
             <h3>Follow Us</h3>
             <div className="social-links">

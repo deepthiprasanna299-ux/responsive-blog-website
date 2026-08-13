@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #1f2937, #111827);
+  background: linear-gradient(135deg, #17283d, #0d1727);
   color: white;
   padding: 4rem 1rem 2rem;
   margin-top: 6rem;
@@ -21,7 +21,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+  background: linear-gradient(135deg, #dfeaf8, var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,33 +55,57 @@
 
 .social-links {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .social-icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  background: rgba(99, 102, 241, 0.2);
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  background: transparent;
   border-radius: 50%;
-  color: var(--primary-light);
+  color: #e8edf6;
   transition: all 0.3s ease;
-  border: 1px solid rgba(99, 102, 241, 0.4);
+  border: 1px solid rgba(232, 237, 246, 0.65);
+  line-height: 1;
+  flex-shrink: 0;
 }
 
+.follow-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  text-align: center;
+}
+
+.follow-section h3 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+
 .social-icon:hover {
-  background: var(--primary);
-  border-color: var(--primary);
+  background: var(--secondary);
+  border-color: var(--secondary);
   transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 8px 20px rgba(183, 122, 82, 0.4);
 }
 
 .footer-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(159, 182, 209, 0.6), transparent);
   margin-bottom: 2rem;
 }
 
@@ -91,6 +115,12 @@
   justify-content: space-between;
   padding-top: 2rem;
   border-top: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+@media (max-width: 768px) {
+  .follow-section {
+    align-items: center;
+  }
 }
 
 .footer-bottom p {
@@ -111,7 +141,7 @@
   justify-content: center;
   transition: all 0.3s ease;
   font-weight: 600;
-  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4px 15px rgba(31, 58, 95, 0.28);
 }
 
 .scroll-to-top:hover {

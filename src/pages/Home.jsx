@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Search, Sparkles, TrendingUp } from 'lucide-react';
+import { Search, TrendingUp } from 'lucide-react';
 import toast from 'react-hot-toast';
 import BlogCard from '../components/BlogCard';
 import { blogPosts } from '../data/blogs';
+import blogImage from '../assets/blog image.png';
 import '../styles/home.css';
 
 export default function Home() {
@@ -131,8 +132,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="hero-image"
           >
-            <div className="floating-card">
-              <Sparkles className="floating-icon" />
+            <div className="blog-illustration-card">
+              <img src={blogImage} alt="Blog Illustration" className="blog-illustration" />
             </div>
           </motion.div>
         </div>
