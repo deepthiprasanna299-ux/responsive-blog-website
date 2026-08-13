@@ -299,3 +299,34 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* === RESPONSIVE DESIGN === */
+
+/* Mobile Screens (up to 640px) */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    line-height: 1.5;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+}
+
+/* Tablet Screens (641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Desktop Screens (1025px and above) */
+@media (min-width: 1025px) {
+  html {
+    font-size: 16px;
+  }
+}
