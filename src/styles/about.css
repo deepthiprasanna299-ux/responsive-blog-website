@@ -1,0 +1,479 @@
+.about-page {
+  min-height: 100vh;
+  background: var(--bg-white);
+  padding-top: 70px;
+}
+
+.about-hero {
+  position: relative;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  padding: 5rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-hero .hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-hero .gradient-blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(80px);
+}
+
+.about-hero .blob-1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  right: -100px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  animation: float 8s ease-in-out infinite;
+}
+
+.about-hero .blob-2 {
+  width: 250px;
+  height: 250px;
+  bottom: -50px;
+  left: -50px;
+  background: linear-gradient(135deg, var(--accent), var(--secondary));
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+.about-hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.about-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* Mission Section */
+.mission-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--bg-light), white);
+  border-radius: 30px;
+  border: 1px solid var(--border);
+}
+
+.mission-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.mission-content p {
+  color: var(--text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.mission-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  box-shadow: 0 20px 50px rgba(99, 102, 241, 0.3);
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Values Section */
+.values-section {
+  margin-bottom: 4rem;
+}
+
+.values-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.value-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.value-card:hover {
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary);
+}
+
+.value-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  transform: scale(1.1);
+}
+
+.value-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+}
+
+.value-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Stats Section */
+.stats-section {
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(99, 102, 241, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(99, 102, 241, 0.4);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+/* Team Section */
+.team-section {
+  margin-bottom: 3rem;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benefit-item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+  transform: translateX(10px);
+}
+
+.benefit-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.benefit-item h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+  color: var(--text-light);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mission-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding-top: 60px;
+  }
+
+  .about-hero {
+    padding: 3rem 1rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .mission-section {
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    border-radius: 20px;
+  }
+
+  .mission-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .image-placeholder {
+    width: 250px;
+    height: 250px;
+    font-size: 4rem;
+  }
+
+  .values-section h2,
+  .team-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+  }
+
+  .benefit-item {
+    grid-template-columns: 50px 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .benefit-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 2rem 1rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.4rem;
+  }
+
+  .about-hero p {
+    font-size: 0.9rem;
+  }
+
+  .about-container {
+    padding: 1rem;
+  }
+
+  .mission-section {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+  }
+
+  .mission-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .mission-content p {
+    font-size: 0.95rem;
+  }
+
+  .image-placeholder {
+    width: 200px;
+    height: 200px;
+    font-size: 3rem;
+    border-radius: 20px;
+  }
+
+  .values-section,
+  .team-section {
+    margin-bottom: 2rem;
+  }
+
+  .values-section h2,
+  .team-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .values-grid {
+    gap: 1.5rem;
+  }
+
+  .value-card {
+    padding: 1.25rem;
+    border-radius: 15px;
+  }
+
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+
+  .value-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .value-card p {
+    font-size: 0.85rem;
+  }
+
+  .stats-grid {
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
+    border-radius: 15px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .benefits-list {
+    gap: 1rem;
+  }
+
+  .benefit-item {
+    grid-template-columns: 45px 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .benefit-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .benefit-item h3 {
+    font-size: 1rem;
+  }
+
+  .benefit-item p {
+    font-size: 0.85rem;
+  }
+}
